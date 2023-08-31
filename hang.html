@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./hang.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>Hang Man</title>
+</head>
+<body class="dark bg-amber-200 dark:bg-slate-800">
+    
+    <div id="gamemodel">
+        <div id="content">
+            <img src="./lost.gif">
+            <h1 class="font-bold text-red-600">GAME OVER</h1>
+            <h2 class="font-bold">The Word Was: <b class="text-blue-500">hehe</b></h2>
+            <button id="again" class="bg-purple-400 w-full p-2 rounded-xl font-bold italic text-green-700 hover:bg-green-700 hover:text-purple-400">Try Again</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="container" class="bg-yellow-50 dark:bg-slate-300 flex justify-between items-center  sm:flex-col lg:flex-row lg:w-3/4 ">
+        <div id="hangman-box" class="flex flex-col md:mb-11">
+            <img src="./hangman-0.svg">
+            <h1 class="text-center font-bold dark:text-red-900 text-2xl md:hidden lg:block">HANGMAN GAME</h1>
+        </div>
+
+
+        <div id="gamebox">
+            <ul id="worddispaly" class="flex justify-center items-center gap-3">
+                <!-- <li id="letter" class=" uppercase text-2xl font-bold guessed "></li>
+                <li id="letter" class=" uppercase text-2xl font-bold "></li>
+                <li id="letter" class=" uppercase text-2xl font-bold ">a</li>
+                <li id="letter" class=" uppercase text-2xl font-bold "></li>
+                <li id="letter" class=" uppercase text-2xl font-bold "></li> -->
+            </ul>
+
+            <div id="hint" class=" text-center font-semibold text-2xl mt-2">
+                Hint: <b class="font-bold dark:text-red-900 text-2xl">Lorem ipsum dolor sit amet.</b>
+            </div>
+            <div id="guesses" class="font-semibold text-2xl mt-2 text-center">
+                Incorrect guesses: <b class="font-bold dark:text-red-900 text-2xl">0/6</b>
+            </div>
+
+            <div id="keys">
+                <!-- <button class="dark:hover:text-red-900 hover:text-cyan-950">a</button><button class="dark:hover:text-red-900 hover:text-cyan-950">b</button><button class="dark:hover:text-red-900 hover:text-cyan-950">c</button><button class="dark:hover:text-red-900 hover:text-cyan-950">d</button>
+                <button class="dark:hover:text-red-900 hover:text-cyan-950">e</button><button class="dark:hover:text-red-900 hover:text-cyan-950">f</button><button class="dark:hover:text-red-900 hover:text-cyan-950">g</button><button class="dark:hover:text-red-900 hover:text-cyan-950">h</button>
+                <button class="dark:hover:text-red-900 hover:text-cyan-950">i</button><button class="dark:hover:text-red-900 hover:text-cyan-950">j</button><button class="dark:hover:text-red-900 hover:text-cyan-950">k</button><button class="dark:hover:text-red-900 hover:text-cyan-950">l</button>
+                <button class="dark:hover:text-red-900 hover:text-cyan-950">m</button><button class="dark:hover:text-red-900 hover:text-cyan-950">n</button><button class="dark:hover:text-red-900 hover:text-cyan-950">o</button><button class="dark:hover:text-red-900 hover:text-cyan-950">p</button>
+                <button class="dark:hover:text-red-900 hover:text-cyan-950">q</button><button class="dark:hover:text-red-900 hover:text-cyan-950">r</button><button class="dark:hover:text-red-900 hover:text-cyan-950">s</button><button class="dark:hover:text-red-900 hover:text-cyan-950">t</button>
+                <button class="dark:hover:text-red-900 hover:text-cyan-950">u</button><button class="dark:hover:text-red-900 hover:text-cyan-950">v</button><button class="dark:hover:text-red-900 hover:text-cyan-950">w</button><button class="dark:hover:text-red-900 hover:text-cyan-950">x</button>
+                <button class="dark:hover:text-red-900 hover:text-cyan-950">y</button><button class="dark:hover:text-red-900 hover:text-cyan-950">z</button> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./WordList.js"></script>   
+<script src="./hang.js"></script>    
+</body>
+</html>

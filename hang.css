@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&display=swap');
+
+/* font-family: 'Acme', sans-serif; */
+/* font-family: 'Barriecito', cursive; */
+/* font-family: 'Creepster', cursive; */
+/* font-family: 'Fredericka the Great', cursive; */
+
+
+
+
+
+
+#container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:40px 30px;
+    border-radius: 7px;
+}
+#container img{
+    max-width: 270px;
+}
+#hangman-box h1{
+font-family: 'Fredericka the Great', cursive;
+}
+
+#worddispaly li{
+    border-bottom: 2px solid black ;
+    width: 28px;
+}
+#keys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap:7px;
+}
+#keys button{
+    width: calc(100% /9 - 5px);
+    background: transparent;
+    box-shadow: 0 0 3px;
+    padding:3px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    transition: 0.3s ease;
+}
+#keys button:hover{
+    color:darkcyan
+}
+#keys button[disabled]{
+    opacity: 0.5;
+    pointer-events: none;
+}
+#letter.guessed{
+    margin: -35px 0 0px;
+    border:none
+}
+#letter{
+    width: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+#gamemodel{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+}
+#gamemodel.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+#content{
+    background: #fff;
+    width:550px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:30px 25px;
+    border-radius: 10px;
+}
+#gamemodel img{
+    width: 170px;
+    margin-bottom: 15px;
+}
+#gamemodel h1{
+    font-family: 'Creepster', cursive;
+    font-size: 35px;
+}
+#gamemodel h2{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 25px;
+}
+#gamemodel button{
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    transition: 0.3s ease;
+}

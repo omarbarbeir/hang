@@ -1,0 +1,15 @@
+{
+  "name": "hang-man-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hang.js",
+  "scripts": {
+    "test": "npx tailwindcss -i  ./hang.css -o  ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
